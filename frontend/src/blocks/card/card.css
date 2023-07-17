@@ -1,0 +1,24 @@
+.card {
+    max-width: 282px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+    .card {
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .card {
+        max-width: 333px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .card {
+        max-width: 282px;
+    }
+}

@@ -1,0 +1,15 @@
+.profile__name-edit {
+    display: flex;  
+}
+
+@media screen and (max-width: 720px) {
+    .profile__name-edit {
+        padding-left: 41px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .profile__name-edit {
+        padding-left: 33px;
+    }
+}

@@ -1,0 +1,5 @@
+.header__body {
+  display: flex;
+  column-gap: 24px;
+  margin: 0 0 41px;
+}

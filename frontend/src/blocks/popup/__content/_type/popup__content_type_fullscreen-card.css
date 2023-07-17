@@ -1,0 +1,7 @@
+.popup__content_type_fullscreen-card {
+    width:fit-content;
+    background-color: unset;
+    max-width: 75vw;
+    max-height: 75vh;
+    position: relative;
+}

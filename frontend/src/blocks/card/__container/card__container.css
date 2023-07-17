@@ -1,0 +1,24 @@
+.card__container {
+    margin: 23px 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .card__container {
+        margin: 20px 17px 30px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .card__container {
+        margin: 20px 25px 30px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .card__container {
+        margin: 25px 20px 30px;
+    }
+}

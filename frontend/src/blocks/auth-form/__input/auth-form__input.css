@@ -1,0 +1,19 @@
+.auth-form__input {
+  margin-bottom: 30px;
+  background-color: black;
+  color: white;
+  font-family: Inter;
+  font-weight: 400;
+  max-width: 358px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #CCC;
+  font-size: 14px;
+  line-height: 16.94px;
+  max-height: 27px;
+  padding: 0 0 10px;
+}
+
+.auth-form__input:last-of-type {
+  margin-bottom: 229px;
+}

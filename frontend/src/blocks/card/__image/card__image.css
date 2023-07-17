@@ -1,0 +1,28 @@
+.card__image {
+    border-radius: 10px 10px 0 0;
+    width: 282px;
+    height: 282px;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+    .card__image {
+        width: 251px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .card__image {
+        width: 333px;
+        height: 333px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .card__image {
+        width: 282px;
+        height: 282px;
+    }
+}
