@@ -8,9 +8,9 @@ export const config = {
 };
 
 export const apiData = {
-  host: 'https://mesto.nomoreparties.co/v1/cohort-47',
+  host: 'https://mesto.nomoreparties.co/v1/cohort-70',
   headers: {
-    authorization: 'dcded44e-0130-46c5-aa5b-22f4493838c0',
+    authorization: '3c43febc-58b5-4f7c-a5a1-3f96bf517fca',
                    'Content-Type': 'application/json'
   }
 }

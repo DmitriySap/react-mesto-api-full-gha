@@ -1,4 +1,4 @@
-const url = "https://auth.nomoreparties.co";
+const url = "http://localhost:4000";
 
 class Auth {
   constructor(options) {
