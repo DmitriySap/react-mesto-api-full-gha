@@ -5,6 +5,8 @@ const IncorrectDataError = require('../utils/incorrectDataError');
 const NotUniqueEmailError = require('../utils/notUniqueEmailError');
 const User = require('../models/user');
 
+const { NODE_ENV, JWT_SECRET } = process.env;
+
 module.exports.getUsers = async (req, res, next) => {
   try {
     const users = await User.find({});
@@ -111,7 +113,7 @@ module.exports.login = (req, res, next) => {
   return User.findUserByCredentials(email, password)
     .then((user) => {
       res.send({
-        token: jwt.sign({ _id: user._id }, 'super-secret', { expiresIn: '7d' }),
+        token: jwt.sign({ _id: user._id }, NODE_ENV === 'production' ? JWT_SECRET : 'super-secret', { expiresIn: '7d' }),
       });
     })
     .catch((err) => next(err));
