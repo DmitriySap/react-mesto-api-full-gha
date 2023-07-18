@@ -10,7 +10,7 @@ export const config = {
 export const apiData = {
   host: 'https://api.saprykind.students.nomoredomains.xyz/',
   headers: {
-    authorization: '3c43febc-58b5-4f7c-a5a1-3f96bf517fca',
+    authorization: `Bearer ${localStorage.getItem('token')}`,
                    'Content-Type': 'application/json'
   }
 }
