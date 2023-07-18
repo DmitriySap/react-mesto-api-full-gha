@@ -47,6 +47,7 @@ function App() {
         api.getInitialCards()
             .then(res => setCards(...cards, res))
             .catch(err => console.log(err))
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const handleEditProfileClick = () => {
@@ -212,6 +213,7 @@ function App() {
 
       React.useEffect(() => {
         handleCheckToken();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
       }, []);
 
   return (
