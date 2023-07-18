@@ -8,7 +8,7 @@ export const config = {
 };
 
 export const apiData = {
-  host: 'https://api.saprykind.students.nomoredomains.xyz/',
+  host: 'https://api.saprykind.students.nomoredomains.xyz',
   headers: {
     authorization: `Bearer ${localStorage.getItem('token')}`,
                    'Content-Type': 'application/json'
