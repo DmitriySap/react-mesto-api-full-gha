@@ -1,4 +1,4 @@
-const url = "http://localhost:4000";
+const url = "http://saprykind.students.nomoredomains.xyz";
 
 class Auth {
   constructor(options) {

@@ -8,7 +8,7 @@ export const config = {
 };
 
 export const apiData = {
-  host: 'https://mesto.nomoreparties.co/v1/cohort-70',
+  host: 'http://saprykind.students.nomoredomains.xyz/',
   headers: {
     authorization: '3c43febc-58b5-4f7c-a5a1-3f96bf517fca',
                    'Content-Type': 'application/json'
