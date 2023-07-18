@@ -163,12 +163,12 @@ function App() {
           .then((data) => {
             if (data.token) {
               localStorage.setItem("token", data.token);
-              handleSetLoginStatus();
-              navigate("/");
               return data;
-              
             }
-            
+          })
+          .then(() => {
+            handleSetLoginStatus();
+            navigate("/");
           })
           .catch((err) => {
             setInfoMessage("Что-то пошло не так! Попробуйте ещё раз.");
