@@ -1,4 +1,4 @@
-const url = "https://api.saprykind.students.nomoredomains.xyz";
+const url = "http://api.saprykind.students.nomoredomains.xyz";
 
 class Auth {
   constructor(options) {
