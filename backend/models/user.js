@@ -49,7 +49,7 @@ const userSchema = new Schema({
 });
 
 // eslint-disable-next-line func-names
-/* userSchema.statics.findUserByCredentials = function (email, password) {
+userSchema.statics.findUserByCredentials = function (email, password) {
   return this.findOne({ email }).select('+password')
     .then((user) => {
       if (!user) {
@@ -65,26 +65,6 @@ const userSchema = new Schema({
           return user;
         });
     });
-}; */
-
-userSchema.statics.findUserByCredentials = async function (email, password) {
-  try {
-    const user = await this.findOne({ email }).select('+password');
-    if (!user) {
-      return Promise.reject(new TokenIncorrectError('Неверная почта или пароль'));
-    }
-    const match = await bcrypt.compare(password, user.password);
-
-    if (!match) {
-      return Promise.reject(new TokenIncorrectError('Неверная почта или пароль'));
-    }
-
-    if (user && match) {
-      return user;
-    }
-  } catch (e) {
-    console.log(e);
-  }
 };
 
 module.exports = mongoose.model('user', userSchema);

@@ -107,7 +107,7 @@ module.exports.updateAvatar = async (req, res, next) => {
   }
 };
 
-/*module.exports.login = (req, res, next) => {
+module.exports.login = (req, res, next) => {
   const { email, password } = req.body;
 
   return User.findUserByCredentials(email, password)
@@ -117,17 +117,4 @@ module.exports.updateAvatar = async (req, res, next) => {
       });
     })
     .catch((err) => next(err));
-};*/
-
-module.exports.login = async (req, res, next) => {
-  try {
-    const { email, password } = req.body;
-    const user = await User.checkUser(email, password);
-    const token = jwt.sign({ _id: user._id }, NODE_ENV === 'production' ? JWT_SECRET : 'super-secret', { expiresIn: '7d' });
-    res.send({
-      token,
-    });
-  } catch (e) {
-    next(e);
-  }
 };
